@@ -442,6 +442,24 @@ footer div i{
 }
 
 /*! ------- RESPONSIVE ------- RESPONSIVE ------- RESPONSIVE ------- */
+@media screen and (max-width:1350px){
+
+    /*! CONTACTANOS */
+    .opinion h2{
+        font-size: 35px;
+        font-weight: 600px;
+    }
+
+    .opinion p{
+        font-size: 18px;
+        font-weight: 300px;
+    }
+
+    .caja-cuestionario form{
+        width: 1000px;
+    }
+    /*! FIN CONTACTANOS */
+}
 
 @media screen and (max-width:1200px){
 
@@ -481,6 +499,25 @@ footer div i{
     /*! FIN PRODUCTOS */
 }
 
+@media screen and (max-width:1050px){
+
+        /*! CONTACTANOS */
+        .opinion h2{
+            font-size: 30px;
+            font-weight: 600px;
+        }
+    
+        .opinion p{
+            font-size: 16px;
+            font-weight: 300px;
+        }
+    
+        .caja-cuestionario form{
+            width: 700px;
+        }
+        /*! FIN CONTACTANOS */
+}
+
 
 @media screen and (max-width:900px) {
     header{
@@ -505,6 +542,25 @@ footer div i{
 
     /*! PRODUCTOS */
 
+}
+
+@media screen and (max-width:750px){
+
+    /*! CONTACTANOS */
+    .opinion h2{
+        font-size: 30px;
+        font-weight: 600px;
+    }
+    
+    .opinion p{
+        font-size: 16px;
+        font-weight: 300px;
+    }
+    
+    .caja-cuestionario form{
+        width: 500px;
+    }
+    /*! FIN CONTACTANOS */
 }
 
 @media screen and (max-width:590px) {
@@ -542,10 +598,22 @@ footer div i{
     header nav ul li{
         margin: 0;
     }
-}
 
-@media screen and (max-width:480px){
-    
+    /*! CONTACTANOS */
+    .opinion h2{
+        font-size: 25px;
+        font-weight: 600px;
+    }
+        
+    .opinion p{
+        font-size: 13px;
+        font-weight: 300px;
+    }
+        
+    .caja-cuestionario form{
+        width: 330px;
+    }
+    /*! FIN CONTACTANOS */
 }
 
 @media  screen and (max-width:400px) {
