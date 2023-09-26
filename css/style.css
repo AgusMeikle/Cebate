@@ -41,6 +41,16 @@ header{
     color: #d8ad75b6;
 }
 
+.container-fluid button{
+    color: #EAC696;
+    border: 2px solid#EAC696;
+}
+
+.container-fluid button i{
+    font-size: 25px;
+}
+
+
 /*? -------MAIN------- -------MAIN------- -------MAIN------- -------MAIN-------*/
 
 /*? -------INDEX------- */
