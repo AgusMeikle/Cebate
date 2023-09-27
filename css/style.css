@@ -29,6 +29,7 @@ header{
     height: 50px;
 }
 
+/** EDITAMOS NAVBAR */
 .navbar-brand{
     color: #EAC696;
 }
@@ -161,14 +162,14 @@ header{
     border: 4px solid #000;
     height: 90vh;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
     align-items:center;
     background-color: #C5E7E5;
 }
 
 .servicios div{
-    width: 100vh;
-    padding: 20px;
+    width: 70%;
+    padding: 10px;
 }
 
 .servicios h3{
@@ -178,6 +179,7 @@ header{
     background-color: #255C99;
     color: #fff;
     border: 3px solid black;
+    margin: 0;
 }
 
 .servicios p{
@@ -185,6 +187,7 @@ header{
     font-size: 25px;
     font-weight: 500;
     text-align: center;
+    margin: 0;
 }
 
 :is(iframe:hover){
@@ -198,7 +201,7 @@ header{
 .servicios-preparacion{
     border: 2px solid #000;
     background-color: #C5E7E5;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -206,7 +209,8 @@ header{
 }
 
 .servicios-preparacion div{
-    width: 100vh;
+    width: 70%;
+    padding: 10px;
 }
 
 .servicios-preparacion h3{
@@ -216,6 +220,7 @@ header{
     background-color: #255C99;
     color: #fff;
     border: 3px solid black;
+    margin:0;
 }
 
 .servicios-preparacion p{
@@ -223,22 +228,22 @@ header{
     font-size: 30px;
     font-weight: 500;
     text-align: center;
+    margin: 0;
 }
-
 
 /** TERCERA SECCION */
 
 .servicios-yerba {
     border: 4px solid #000;
+    background-color: #C5E7E5;
     height: 90vh;
     display: flex;
     justify-content:space-around;
     align-items:center;
-    background-color: #C5E7E5;
 }
 
 .servicios-yerba div{
-    width: 100vh;
+    width: 70%;
     padding: 20px;
 }
 
@@ -249,6 +254,7 @@ header{
     background-color: #255C99;
     color: #fff;
     border: 3px solid black;
+    margin:0;
 }
 
 .servicios-yerba p{
@@ -256,12 +262,14 @@ header{
     font-size: 25px;
     font-weight: 500;
     text-align: center;
+    margin: 0;
 }
 
 .servicios-yerba div ol {
     padding: 20px;
     font-size: 25px;
     font-weight: 500;
+    margin: 0;
 }
 /*? -------PRODUCTOS------- */
 
@@ -452,6 +460,42 @@ footer div i{
 }
 
 /*! ------- RESPONSIVE ------- RESPONSIVE ------- RESPONSIVE ------- */
+@media screen and (max-width:1450px){
+
+    /*! SERVICIOS */
+    /* primer seccion */
+    .servicios h3{
+        font-size: 45px;
+    }
+
+    .servicios p{
+        font-size: 23px;
+    }
+
+    /* segunda seccion */
+    .servicios-preparacion h3{
+        font-size: 45px;
+    }
+
+    .servicios-preparacion p{
+        font-size: 23px;
+    }
+
+    /* tercera seccion */
+    .servicios-yerba h3{
+        font-size: 45px;
+    }
+
+    .servicios-yerba p{
+        font-size: 23px;
+    }
+    :is(iframe){
+        height: 200px;
+        width: 400px;
+    }
+    /*! FIN SERVICIOS */
+}
+
 @media screen and (max-width:1350px){
 
     /*! CONTACTANOS */
@@ -469,6 +513,54 @@ footer div i{
         width: 1000px;
     }
     /*! FIN CONTACTANOS */
+}
+
+@media screen and (max-width:1300px){
+
+    /*! SERVICIOS */
+    /* primer seccion */
+    .servicios{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .servicios h3{
+        font-size: 40px;
+    }
+
+    .servicios p{
+        font-size: 20px;
+    }
+
+    /* segunda seccion */
+    .servicios-preparacion{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .servicios-preparacion h3{
+        font-size: 40px;
+    }
+
+    .servicios-preparacion p{
+        font-size: 20px;
+    }
+
+    /* tercera seccion */
+    .servicios-yerba h3{
+        font-size: 40px;
+    }
+
+    .servicios-yerba p{
+        font-size: 20px;
+    }
+
+    .servicios-yerba div ol li{
+        font-size: 20px;
+    }
+    :is(iframe){
+        height: 200px;
+        width: 400px;
+    }
+    /*! FIN SERVICIOS */
 }
 
 @media screen and (max-width:1200px){
@@ -528,7 +620,6 @@ footer div i{
         /*! FIN CONTACTANOS */
 }
 
-
 @media screen and (max-width:900px) {
     header{
         flex-direction: column;
@@ -555,6 +646,46 @@ footer div i{
 }
 
 @media screen and (max-width:750px){
+    /*! SERVICIOS */
+    .servicios h3{
+        font-size: 30px;
+    }
+
+    .servicios p{
+        font-size: 17px;
+    }
+
+    .servicios-preparacion h3{
+        font-size: 30px;
+    }
+
+    .servicios-preparacion p{
+        font-size: 17px;
+    }
+    :is(iframe){
+        height: 150px;
+        width: 350px;
+    }
+
+    .servicios-yerba{
+        flex-direction: column;
+        height: auto;
+        padding: 10;
+    }
+
+    .servicios-yerba h3{
+        font-size: 30px;
+    }
+
+    .servicios-yerba p{
+        font-size: 17px;
+    }
+
+    .servicios-yerba div ol li{
+        font-size: 17px;
+    }
+    /*! FIN SERVICIOS */
+
 
     /*! CONTACTANOS */
     .opinion h2{
@@ -624,6 +755,41 @@ footer div i{
         width: 330px;
     }
     /*! FIN CONTACTANOS */
+}
+
+@media screen and (max-width:444px){
+    .servicios h3{
+        font-size: 25px;
+    }
+
+    .servicios p{
+        font-size: 15px;
+    }
+
+    .servicios-preparacion h3{
+        font-size: 25px;
+    }
+
+    .servicios-preparacion p{
+        font-size: 15px;
+    }
+
+    .servicios-yerba h3{
+        font-size: 25px;
+    }
+
+    .servicios-yerba p{
+        font-size: 15px;
+    }
+
+    .servicios-yerba div ol li{
+        font-size: 15px;
+    }
+
+    :is(iframe){
+        height: 150px;
+        width: 250px;
+    }
 }
 
 @media  screen and (max-width:400px) {
