@@ -662,11 +662,7 @@ footer div i{
     .servicios-preparacion p{
         font-size: 17px;
     }
-    :is(iframe){
-        height: 150px;
-        width: 350px;
-    }
-
+    
     .servicios-yerba{
         flex-direction: column;
         height: auto;
@@ -683,6 +679,11 @@ footer div i{
 
     .servicios-yerba div ol li{
         font-size: 17px;
+    }
+
+    :is(iframe){
+        height: 150px;
+        width: 350px;
     }
     /*! FIN SERVICIOS */
 
