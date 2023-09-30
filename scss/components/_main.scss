@@ -1,0 +1,91 @@
+//! -------- INDEX --------
+.hero{
+    width: 100%;
+    height: 90vh;
+    background-color: #C5E7E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        background-color: #255C99;
+        color: white;
+        font-size: 55px;
+        font-weight: 700;
+        border: solid 4px black;
+        padding: 10px;
+        text-align: center;
+    }
+    p{
+        font-size: 30px;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+.muestra-productos{
+    background-color: #255C99;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    div{
+        width: 358px;
+        height: 308px;
+        border: 4px solid black;
+        margin: 10px;
+        a{
+            img{
+                width: 350px;
+                height: 300px;
+                box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+                -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+                -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+                &:hover{
+                    box-shadow: -1px 1px 27px 3px rgba(0,0,0,1);
+                    -webkit-box-shadow: -1px 1px 27px 3px rgba(0,0,0,1);
+                    -moz-box-shadow: -1px 1px 27px 3px rgba(0,0,0,1);
+                }
+            }
+        }
+    }
+}
+
+.grid-galeria{
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 400px;
+    gap: 15px;
+    .item-galeria{
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+            -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+            -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+        }
+        h3{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.527);
+            color: white;
+            width: 100%;
+            bottom: 0;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+    .img-1{
+        grid-row: span 2;
+    }
+}
+
+//! -------- FIN DEL INDEX --------
+
+//* -------- SERVICIOS --------
+

@@ -1,0 +1,21 @@
+footer{
+    background-color: #432818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    h3{
+        color: #EAC696;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    div{
+        a{
+            i{
+                padding: 5px;
+                font-size: 40px;
+                color: #EAC696;
+            }
+        }
+    }
+}
