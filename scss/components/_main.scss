@@ -88,4 +88,224 @@
 //! -------- FIN DEL INDEX --------
 
 //* -------- SERVICIOS --------
+.servicios{
+    border: 4px solid #000;
+    height: 90vh;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color: #C5E7E5;
+    div{
+        width: 70%;
+        padding: 10px;
+        h3{
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;
+            background-color: #255C99;
+            color: #fff;
+            border: 3px solid black;
+            margin: 0;
+        }
+        p{
+            padding: 20px;
+            font-size: 25px;
+            font-weight: 500;
+            text-align: center;
+            margin: 0;
+        }
+    }
+    ifame{
+        box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+        -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+        -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+    }
+}
 
+.servicios-preparacion{
+    border: 2px solid #000;
+    background-color: #C5E7E5;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    div{
+        width: 70%;
+        padding: 10px;
+        h3{
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;
+            background-color: #255C99;
+            color: #fff;
+            border: 3px solid black;
+            margin:0;
+        }
+        p{
+            padding: 20px;
+            font-size: 25px;
+            font-weight: 500;
+            text-align: center;
+            margin: 0;
+        }
+    }
+    iframe{
+        box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+        -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+        -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+    }
+}
+
+.servicios-yerba{
+    border: 4px solid #000;
+    background-color: #C5E7E5;
+    height: 90vh;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    div{
+        width: 70%;
+        padding: 20px;
+        h3{
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;
+            background-color: #255C99;
+            color: #fff;
+            border: 3px solid black;
+            margin:0;
+        }
+        p{
+            padding: 20px;
+            font-size: 25px;
+            font-weight: 500;
+            text-align: center;
+            margin: 0;
+        }
+    }
+    div{
+        ol{
+            padding: 20px;
+            font-size: 25px;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+}
+
+//* -------- FIN DE SERVICIOS --------
+
+//? -------- PRODUCTOS --------
+.productos{
+    h2{
+        border: 4px solid #000;
+        text-align: center;
+        background-color: #255C99;
+        color: white;
+        padding: 10px;
+        font-size: 50px;
+        font-weight: 700;
+    }
+    .productos-contenedor{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #DAF0EE;
+        div{
+            width: 325px;
+            height: 425px;
+            border: 4px solid black;
+            text-align: center;
+            margin: 5px;
+            background-color: #fff;
+            &:hover{
+                box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+                -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+                -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+            }
+            h3{
+                font-size: 25px;
+                border-top: 2px solid #000;
+            }
+            p{
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+//? -------- FIN DE PRODUCTOS --------
+
+//TODO -------- NOSOTROS --------
+.matera{
+    flex-direction: row-reverse;
+}
+
+//TODO -------- FIN DE NOSOTROS --------
+
+// -------- CONTACTANOS --------
+.opinion{
+    text-align: center;
+    background-color: #255C99;
+    border: 4px solid black;
+    color: white;
+    padding: 10px;
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
+.caja-cuestionario{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C5E7E5;
+    form{
+        border: 3px solid black;
+        padding: 20px;
+        background-image: linear-gradient(#bb95578e, #bb955794) , url(../img/fondo_yerba.png);
+        box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+        -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+        -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+        input{
+            width: 100%;
+            font-size: 25px;
+            font-weight: bold;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid #000;
+            &::placeholder{
+                color: #000000;
+            }
+            &#enviar{
+                background-color:#faedcd;
+                font-size: 25px;
+                border: 2px solid #000;
+                padding: 10px;
+            }
+        }
+        textarea{
+            width: 100%;
+            font-size: 25px;
+            font-weight: bold;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid #000;
+            &::placeholder{
+                color: #000000;
+            }
+        }
+    }
+}
