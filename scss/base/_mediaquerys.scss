@@ -1,0 +1,354 @@
+@media screen and (max-width:1450px){
+    //! SERVICIOS //
+
+    &:is(.servicios div h3, .servicios-preparacion div h3, .servicios-yerba div h3){
+        font-size: 45px;
+    }
+
+    &:is(.servicios div p, .servicios-preparacion div p, .servicios-yerba div p){
+        font-size: 23px;
+    }
+
+    &:is(.servicios iframe, .servicios-preparacion iframe){
+        height: 200px;
+        width: 400px;
+    }
+    //! FIN SERVICIOS //
+}
+
+@media screen and (max-width:1350px){
+
+    //! CONTACTANOS //
+    .opinion{
+        h2{
+            font-size: 35px;
+            font-weight: 600px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 300px;
+        }
+    }
+    .caja-cuestionario{
+        form{
+            width: 1000px;
+        }
+    }
+    //! FIN CONTACTANOS //
+}
+
+@media screen and (max-width:1300px){
+
+    //! SERVICIOS //
+    .servicios{
+        flex-direction: column;
+        justify-content: space-evenly;
+        div{
+            h3{
+                font-size: 40px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+
+    .servicios-preparacion{
+        flex-direction: column;
+        justify-content: space-evenly;
+        div{
+            h3{
+                font-size: 40px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+
+    .servicios-yerba{
+        div{
+            h3{
+                font-size: 40px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        div{
+            ol{
+                li{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    &:is(iframe){
+        height: 200px;
+        width: 400px;
+    }
+    //! FIN SERVICIOS /
+    }
+
+    @media screen and (max-width:1200px){
+
+        //! INDEX */
+        .muestra-productos{
+            div{
+                width: 258px;
+                height: 208px;
+                a{
+                    img{
+                        width: 250px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+        //! FIN INDEX */
+    }
+
+@media screen and (max-width:1120px){
+
+    //! PRODUCTOS */
+    .productos{
+        .productos-contenedor{
+            div{
+                width: 225px;
+                height: 325px;
+                h3{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 13px;
+                }
+                img{
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+    //! FIN PRODUCTOS */
+}
+
+@media screen and (max-width:1050px){
+    //! CONTACTANOS */
+    .opinion{
+        h2{
+            font-size: 30px;
+            font-weight: 600px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 300px;
+        }
+    }
+
+    .caja-cuestionario{
+        form{
+            width: 700px;
+        }
+    }
+    //! FIN CONTACTANOS */
+}
+
+@media screen and (max-width:900px) {
+    header{
+        flex-direction: column;
+    }
+
+    //! INDEX */
+    .grid-galeria{
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 250;
+        .item-galeria{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .img-5{
+            grid-column: span 2;
+        }
+    }
+    //!  FIN INDEX */
+}
+
+@media screen and (max-width:750px){
+    //! SERVICIOS */
+    .servicios{
+        div{
+            h3{
+                font-size: 30px;
+            }
+            p{
+                font-size: 17px;
+            }
+        }
+    }
+
+    .servicios-preparacion{
+        div{
+            h3{
+                font-size: 30px;
+            }
+            p{
+                font-size: 17px;
+            }
+        }
+    }
+
+    .servicios-yerba{
+        flex-direction: column;
+        height: auto;
+        padding: 10;
+        div{
+            h3{
+                font-size: 30px;
+            }
+            p{
+                font-size: 17px;
+            }
+        }
+        div{
+            ol{
+                li{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    &:is(iframe){
+        height: 150px;
+        width: 350px;
+    }
+    //! FIN SERVICIOS */
+
+
+    //! CONTACTANOS */
+    .opinion{
+        h2{
+            font-size: 30px;
+            font-weight: 600px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 300px;
+        }
+    }
+
+    .caja-cuestionario{
+        form{
+            width: 500px;
+        }
+    }
+    //! FIN CONTACTANOS */
+}
+
+@media screen and (max-width:590px) {
+    //! INDEX //
+    .hero{
+        h2{
+            font-size: 35px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    //! FIN INDEX //
+}
+
+@media screen and (max-width:550px){
+    //! INDEX */
+    .grid-galeria{
+        grid-template-columns: 1fr;
+        .item-galeria{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    }
+    //! FIN INDEX */
+}
+
+@media screen and (max-width:540px) {
+
+    //! CONTACTANOS */
+    .opinion{
+        h2{
+            font-size: 25px;
+            font-weight: 600px;
+        }
+        p{
+            font-size: 13px;
+            font-weight: 300px;
+        }
+    }
+
+    .caja-cuestionario{
+        form{
+            width: 330px;
+        }
+    }
+    //! FIN CONTACTANOS */
+}
+
+@media screen and (max-width:444px){
+    .servicios{
+        div{
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+
+    .servicios-preparacion{
+        div{
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+
+    .servicios{
+        div{
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        div{
+            ol{
+                li{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    &:is(iframe){
+        height: 150px;
+        width: 250px;
+    }
+}
+
+@media  screen and (max-width:400px) {
+    //! INDEX  */
+    .hero{
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 17px;
+        }
+    }
+    //! FIN INDEX */
+}

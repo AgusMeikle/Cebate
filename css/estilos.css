@@ -332,3 +332,168 @@ footer {
     padding: 5px;
     font-size: 40px;
     color: #EAC696; }
+
+@media screen and (max-width: 1450px) {
+  :is(.servicios div h3, .servicios-preparacion div h3, .servicios-yerba div h3) {
+    font-size: 45px; }
+  :is(.servicios div p, .servicios-preparacion div p, .servicios-yerba div p) {
+    font-size: 23px; }
+  :is(.servicios iframe, .servicios-preparacion iframe) {
+    height: 200px;
+    width: 400px; } }
+
+@media screen and (max-width: 1350px) {
+  .opinion h2 {
+    font-size: 35px;
+    font-weight: 600px; }
+  .opinion p {
+    font-size: 18px;
+    font-weight: 300px; }
+  .caja-cuestionario form {
+    width: 1000px; } }
+
+@media screen and (max-width: 1300px) {
+  .servicios {
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .servicios div h3 {
+      font-size: 40px; }
+    .servicios div p {
+      font-size: 20px; }
+  .servicios-preparacion {
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .servicios-preparacion div h3 {
+      font-size: 40px; }
+    .servicios-preparacion div p {
+      font-size: 20px; }
+  .servicios-yerba div h3 {
+    font-size: 40px; }
+  .servicios-yerba div p {
+    font-size: 20px; }
+  .servicios-yerba div ol li {
+    font-size: 20px; }
+  :is(iframe) {
+    height: 200px;
+    width: 400px; } }
+
+@media screen and (max-width: 1200px) {
+  .muestra-productos div {
+    width: 258px;
+    height: 208px; }
+    .muestra-productos div a img {
+      width: 250px;
+      height: 200px; } }
+
+@media screen and (max-width: 1120px) {
+  .productos .productos-contenedor div {
+    width: 225px;
+    height: 325px; }
+    .productos .productos-contenedor div h3 {
+      font-size: 20px; }
+    .productos .productos-contenedor div p {
+      font-size: 13px; }
+    .productos .productos-contenedor div img {
+      height: 200px;
+      width: 200px; } }
+
+@media screen and (max-width: 1050px) {
+  .opinion h2 {
+    font-size: 30px;
+    font-weight: 600px; }
+  .opinion p {
+    font-size: 16px;
+    font-weight: 300px; }
+  .caja-cuestionario form {
+    width: 700px; } }
+
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column; }
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250; }
+    .grid-galeria .item-galeria {
+      grid-column: span 1;
+      grid-row: span 1; }
+    .grid-galeria .img-5 {
+      grid-column: span 2; } }
+
+@media screen and (max-width: 750px) {
+  .servicios div h3 {
+    font-size: 30px; }
+  .servicios div p {
+    font-size: 17px; }
+  .servicios-preparacion div h3 {
+    font-size: 30px; }
+  .servicios-preparacion div p {
+    font-size: 17px; }
+  .servicios-yerba {
+    flex-direction: column;
+    height: auto;
+    padding: 10; }
+    .servicios-yerba div h3 {
+      font-size: 30px; }
+    .servicios-yerba div p {
+      font-size: 17px; }
+    .servicios-yerba div ol li {
+      font-size: 17px; }
+  :is(iframe) {
+    height: 150px;
+    width: 350px; }
+  .opinion h2 {
+    font-size: 30px;
+    font-weight: 600px; }
+  .opinion p {
+    font-size: 16px;
+    font-weight: 300px; }
+  .caja-cuestionario form {
+    width: 500px; } }
+
+@media screen and (max-width: 590px) {
+  .hero h2 {
+    font-size: 35px; }
+  .hero p {
+    font-size: 20px; } }
+
+@media screen and (max-width: 550px) {
+  .grid-galeria {
+    grid-template-columns: 1fr; }
+    .grid-galeria .item-galeria {
+      grid-column: span 1;
+      grid-row: span 1; } }
+
+@media screen and (max-width: 540px) {
+  .opinion h2 {
+    font-size: 25px;
+    font-weight: 600px; }
+  .opinion p {
+    font-size: 13px;
+    font-weight: 300px; }
+  .caja-cuestionario form {
+    width: 330px; } }
+
+@media screen and (max-width: 444px) {
+  .servicios div h3 {
+    font-size: 25px; }
+  .servicios div p {
+    font-size: 15px; }
+  .servicios-preparacion div h3 {
+    font-size: 25px; }
+  .servicios-preparacion div p {
+    font-size: 15px; }
+  .servicios div h3 {
+    font-size: 25px; }
+  .servicios div p {
+    font-size: 15px; }
+  .servicios div ol li {
+    font-size: 15px; }
+  :is(iframe) {
+    height: 150px;
+    width: 250px; } }
+
+@media screen and (max-width: 400px) {
+  .hero h2 {
+    font-size: 30px; }
+  .hero p {
+    font-size: 17px; } }
