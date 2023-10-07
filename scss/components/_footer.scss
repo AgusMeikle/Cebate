@@ -5,7 +5,7 @@ footer{
     align-items: center;
     padding: 20px;
     h3{
-        color: #EAC696;
+        color: $color-texto;
         font-weight: 500;
         font-size: 15px;
     }
@@ -14,7 +14,7 @@ footer{
             i{
                 padding: 5px;
                 font-size: 40px;
-                color: #EAC696;
+                color: $color-texto;
             }
         }
     }

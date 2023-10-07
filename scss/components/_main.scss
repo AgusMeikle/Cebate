@@ -2,13 +2,13 @@
 .hero{
     width: 100%;
     height: 90vh;
-    background-color: #C5E7E5;
+    background-color: nth($colores-fondo, 1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     h2{
-        background-color: #255C99;
+        background-color: nth($colores-fondo, 4 );
         color: white;
         font-size: 55px;
         font-weight: 700;
@@ -20,11 +20,12 @@
         font-size: 30px;
         padding: 20px;
         text-align: center;
+        color: $color-texto-oscuro;
     }
 }
 
 .muestra-productos{
-    background-color: #255C99;
+    background-color: nth($colores-fondo, 2);
     height: 100vh;
     display: flex;
     justify-content: space-around;
@@ -54,7 +55,7 @@
 
 .grid-galeria{
     width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 400px;
@@ -72,7 +73,7 @@
         h3{
             position: absolute;
             background-color: rgba(0, 0, 0, 0.527);
-            color: white;
+            color: $color-texto;
             width: 100%;
             bottom: 0;
             margin: 0;
@@ -94,7 +95,7 @@
     display: flex;
     justify-content:space-around;
     align-items:center;
-    background-color: #C5E7E5;
+    background-color: nth($colores-fondo, 1 );
     div{
         width: 70%;
         padding: 10px;
@@ -102,7 +103,7 @@
             font-size: 50px;
             font-weight: 700;
             text-align: center;
-            background-color: #255C99;
+            background-color: nth($colores-fondo, 4 );
             color: #fff;
             border: 3px solid black;
             margin: 0;
@@ -112,6 +113,7 @@
             font-size: 25px;
             font-weight: 500;
             text-align: center;
+            color: $color-texto-oscuro;
             margin: 0;
         }
     }
@@ -124,7 +126,7 @@
 
 .servicios-preparacion{
     border: 2px solid #000;
-    background-color: #C5E7E5;
+    background-color: nth($colores-fondo, 1 );
     height: 90vh;
     display: flex;
     justify-content: space-around;
@@ -137,7 +139,7 @@
             font-size: 50px;
             font-weight: 700;
             text-align: center;
-            background-color: #255C99;
+            background-color: nth($colores-fondo, 4 );
             color: #fff;
             border: 3px solid black;
             margin:0;
@@ -147,6 +149,7 @@
             font-size: 25px;
             font-weight: 500;
             text-align: center;
+            color: $color-texto-oscuro;
             margin: 0;
         }
     }
@@ -159,7 +162,7 @@
 
 .servicios-yerba{
     border: 4px solid #000;
-    background-color: #C5E7E5;
+    background-color: nth($colores-fondo, 1 );
     height: 90vh;
     display: flex;
     justify-content:space-around;
@@ -171,7 +174,7 @@
             font-size: 50px;
             font-weight: 700;
             text-align: center;
-            background-color: #255C99;
+            background-color: nth($colores-fondo, 4 );
             color: #fff;
             border: 3px solid black;
             margin:0;
@@ -181,6 +184,7 @@
             font-size: 25px;
             font-weight: 500;
             text-align: center;
+            color: $color-texto-oscuro;
             margin: 0;
         }
     }
@@ -189,6 +193,7 @@
             padding: 20px;
             font-size: 25px;
             font-weight: 500;
+            color: $color-texto-oscuro;
             margin: 0;
         }
     }
@@ -201,11 +206,12 @@
     h2{
         border: 4px solid #000;
         text-align: center;
-        background-color: #255C99;
+        background-color: nth($colores-fondo, 4 );
         color: white;
         padding: 10px;
         font-size: 50px;
         font-weight: 700;
+        margin: 0;
     }
     .productos-contenedor{
         width: 100%;
@@ -215,7 +221,7 @@
         justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
-        background-color: #DAF0EE;
+        background-color: nth($colores-fondo, 1 );
         div{
             width: 325px;
             height: 425px;
@@ -252,7 +258,7 @@
 // -------- CONTACTANOS --------
 .opinion{
     text-align: center;
-    background-color: #255C99;
+    background-color: nth($colores-fondo, 4 );
     border: 4px solid black;
     color: white;
     padding: 10px;
@@ -271,7 +277,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #C5E7E5;
+    background-color: nth($colores-fondo, 1 );
     form{
         border: 3px solid black;
         padding: 20px;
