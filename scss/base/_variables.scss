@@ -5,3 +5,24 @@ $color-hover: #d8ad75b6;
 
 //! LISTA  
 $colores-fondo: #d4a276, #a47148, #8b5e34, #603808 ;
+
+//! EXTENDS
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-center-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+//! MIXIN 
+@mixin flex($flex, $direction, $justify, $align){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

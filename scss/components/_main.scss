@@ -3,10 +3,8 @@
     width: 100%;
     height: 90vh;
     background-color: nth($colores-fondo, 1);
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     h2{
         background-color: nth($colores-fondo, 4 );
         color: white;
@@ -27,15 +25,14 @@
 .muestra-productos{
     background-color: nth($colores-fondo, 2);
     height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(flex, row, space-around, center);
     flex-wrap: wrap;
     div{
         width: 358px;
         height: 308px;
         border: 4px solid black;
         margin: 10px;
+        transition: 1s;
         a{
             img{
                 width: 350px;
@@ -43,12 +40,13 @@
                 box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
                 -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
                 -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-                &:hover{
-                    box-shadow: -1px 1px 27px 3px rgba(0,0,0,1);
-                    -webkit-box-shadow: -1px 1px 27px 3px rgba(0,0,0,1);
-                    -moz-box-shadow: -1px 1px 27px 3px rgba(0,0,0,1);
-                }
             }
+        }
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: -1px 1px 27px 3px rgba(0,0,0,1);
+            -webkit-box-shadow: -1px 1px 27px 3px rgba(0,0,0,1);
+            -moz-box-shadow: -1px 1px 27px 3px rgba(0,0,0,1);
         }
     }
 }
@@ -92,9 +90,7 @@
 .servicios{
     border: 4px solid #000;
     height: 90vh;
-    display: flex;
-    justify-content:space-around;
-    align-items:center;
+    @extend %flex-center-around;
     background-color: nth($colores-fondo, 1 );
     div{
         width: 70%;
@@ -117,7 +113,7 @@
             margin: 0;
         }
     }
-    ifame{
+    iframe{
         box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
         -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
         -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
@@ -128,10 +124,7 @@
     border: 2px solid #000;
     background-color: nth($colores-fondo, 1 );
     height: 90vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row-reverse;
+    @include flex(flex, row-reverse, space-around, center);
     div{
         width: 70%;
         padding: 10px;
@@ -164,9 +157,7 @@
     border: 4px solid #000;
     background-color: nth($colores-fondo, 1 );
     height: 90vh;
-    display: flex;
-    justify-content:space-around;
-    align-items:center;
+    @extend %flex-center;
     div{
         width: 70%;
         padding: 20px;
@@ -217,9 +208,7 @@
         width: 100%;
         height: 100%;
         padding: 20px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flex(flex, row, space-evenly, center);
         flex-wrap: wrap;
         background-color: nth($colores-fondo, 1 );
         div{
@@ -229,10 +218,13 @@
             text-align: center;
             margin: 5px;
             background-color: #fff;
+            transition: 1s;
             &:hover{
+                transform: scale(1.05);
                 box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
                 -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
                 -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+
             }
             h3{
                 font-size: 25px;
@@ -274,9 +266,7 @@
 
 .caja-cuestionario{
     height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     background-color: nth($colores-fondo, 1 );
     form{
         border: 3px solid black;

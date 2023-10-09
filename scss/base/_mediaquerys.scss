@@ -333,10 +333,20 @@
             }
         }
     }
+}
 
-    &:is(iframe){
-        height: 150px;
-        width: 250px;
+@media screen and(max-width:420px){
+    .servicios{
+        iframe{
+            height: 120px;
+            width: 200px;
+        }
+    }
+    .servicios-preparacion{
+        iframe{
+            height: 120px;
+            width: 200px;
+        }
     }
 }
 

@@ -1,3 +1,13 @@
+.hero, .servicios-yerba, .caja-cuestionario {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.servicios {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
 * {
   margin: 0;
   padding: 0;
@@ -73,10 +83,7 @@ header {
   width: 100%;
   height: 90vh;
   background-color: #d4a276;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column; }
   .hero h2 {
     background-color: #603808;
     color: white;
@@ -95,6 +102,7 @@ header {
   background-color: #a47148;
   height: 100vh;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap; }
@@ -102,17 +110,19 @@ header {
     width: 358px;
     height: 308px;
     border: 4px solid black;
-    margin: 10px; }
+    margin: 10px;
+    transition: 1s; }
     .muestra-productos div a img {
       width: 350px;
       height: 300px;
       box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
       -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
       -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7); }
-      .muestra-productos div a img:hover {
-        box-shadow: -1px 1px 27px 3px black;
-        -webkit-box-shadow: -1px 1px 27px 3px black;
-        -moz-box-shadow: -1px 1px 27px 3px black; }
+    .muestra-productos div:hover {
+      transform: scale(1.05);
+      box-shadow: -1px 1px 27px 3px black;
+      -webkit-box-shadow: -1px 1px 27px 3px black;
+      -moz-box-shadow: -1px 1px 27px 3px black; }
 
 .grid-galeria {
   width: 100%;
@@ -145,9 +155,6 @@ header {
 .servicios {
   border: 4px solid #000;
   height: 90vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-color: #d4a276; }
   .servicios div {
     width: 70%;
@@ -167,7 +174,7 @@ header {
       text-align: center;
       color: #3f2300;
       margin: 0; }
-  .servicios ifame {
+  .servicios iframe {
     box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
     -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7); }
@@ -177,9 +184,9 @@ header {
   background-color: #d4a276;
   height: 90vh;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-around;
-  align-items: center;
-  flex-direction: row-reverse; }
+  align-items: center; }
   .servicios-preparacion div {
     width: 70%;
     padding: 10px; }
@@ -206,10 +213,7 @@ header {
 .servicios-yerba {
   border: 4px solid #000;
   background-color: #d4a276;
-  height: 90vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  height: 90vh; }
   .servicios-yerba div {
     width: 70%;
     padding: 20px; }
@@ -250,6 +254,7 @@ header {
   height: 100%;
   padding: 20px;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
@@ -260,8 +265,10 @@ header {
     border: 4px solid black;
     text-align: center;
     margin: 5px;
-    background-color: #fff; }
+    background-color: #fff;
+    transition: 1s; }
     .productos .productos-contenedor div:hover {
+      transform: scale(1.05);
       box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
       -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
       -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7); }
@@ -290,9 +297,6 @@ header {
 
 .caja-cuestionario {
   height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #d4a276; }
   .caja-cuestionario form {
     border: 3px solid black;
@@ -494,10 +498,15 @@ footer {
   .servicios div p {
     font-size: 15px; }
   .servicios div ol li {
-    font-size: 15px; }
-  :is(iframe) {
-    height: 150px;
-    width: 250px; } }
+    font-size: 15px; } }
+
+@media screen and (max-width: 420px) {
+  .servicios iframe {
+    height: 120px;
+    width: 200px; }
+  .servicios-preparacion iframe {
+    height: 120px;
+    width: 200px; } }
 
 @media screen and (max-width: 400px) {
   .hero h2 {
