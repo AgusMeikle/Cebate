@@ -97,9 +97,21 @@
         }
     }
 
-    &:is(iframe){
-        height: 200px;
-        width: 400px;
+    .servicios{
+        div{
+            iframe{
+                height: 200px;
+                width: 400px;
+            }
+        }
+    }
+    .servicios-preparacion{
+        div{
+            iframe{
+                height: 200px;
+                width: 400px;
+            }
+        }
     }
     //! FIN SERVICIOS /
     }
@@ -253,9 +265,21 @@
         }
     }
 
-    &:is(iframe){
-        height: 150px;
-        width: 350px;
+    .servicios{
+        div{
+            iframe{
+                height: 150px;
+                width: 350px;
+            }
+        }
+    }
+    .servicios-preparacion{
+        div{
+            iframe{
+                height: 150px;
+                width: 350px;
+            }
+        }
     }
     //! FIN SERVICIOS */
 
@@ -381,15 +405,19 @@
 
 @media screen and(max-width:420px){
     .servicios{
-        iframe{
-            height: 120px;
-            width: 200px;
+        div{
+            iframe{
+                height: 120px;
+                width: 200px;
+            }
         }
     }
     .servicios-preparacion{
-        iframe{
-            height: 120px;
-            width: 200px;
+        div{
+            iframe{
+                height: 120px;
+                width: 200px;
+            }
         }
     }
 }
@@ -406,8 +434,10 @@
     }
     //! FIN INDEX */
 
+    //! NOSOTROS
     &:is(.comienzo div img, .matera div img){
         height: 150px;
         width: 240px;
     }
+    //! FIN DE NOSOTROS
 }

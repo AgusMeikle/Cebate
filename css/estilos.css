@@ -145,7 +145,7 @@ header {
       text-align: center;
       color: #3f2300;
       margin: 0; }
-  .servicios iframe {
+  .servicios div iframe {
     box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
     -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7); }
@@ -181,7 +181,7 @@ header {
       text-align: center;
       color: #3f2300;
       margin: 0; }
-  .servicios-preparacion iframe {
+  .servicios-preparacion div iframe {
     box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
     -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7); }
@@ -418,7 +418,10 @@ footer {
     font-size: 20px; }
   .servicios-yerba div ol li {
     font-size: 20px; }
-  :is(iframe) {
+  .servicios div iframe {
+    height: 200px;
+    width: 400px; }
+  .servicios-preparacion div iframe {
     height: 200px;
     width: 400px; } }
 
@@ -494,7 +497,10 @@ footer {
       font-size: 17px; }
     .servicios-yerba div ol li {
       font-size: 17px; }
-  :is(iframe) {
+  .servicios div iframe {
+    height: 150px;
+    width: 350px; }
+  .servicios-preparacion div iframe {
     height: 150px;
     width: 350px; }
   .opinion h2 {
@@ -553,10 +559,10 @@ footer {
     font-size: 15px; } }
 
 @media screen and (max-width: 420px) {
-  .servicios iframe {
+  .servicios div iframe {
     height: 120px;
     width: 200px; }
-  .servicios-preparacion iframe {
+  .servicios-preparacion div iframe {
     height: 120px;
     width: 200px; } }
 
