@@ -39,40 +39,6 @@ body {
 .container-fluid button i {
   font-size: 25px; }
 
-:is(.comienzo, .matera) {
-  height: 90vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #d4a276;
-  border: 4px solid #000; }
-
-:is(.comienzo div, .matera div) {
-  width: 100vh;
-  padding: 10px; }
-
-:is(.comienzo div h2, .matera div h2) {
-  font-size: 50px;
-  font-weight: 700;
-  color: white;
-  text-align: center;
-  background-color: #603808;
-  border: 2px solid #000; }
-
-:is(.comienzo div p, .matera div p) {
-  padding: 20px;
-  font-size: 30px;
-  font-weight: 500;
-  color: #3f2300; }
-
-:is(.comienzo img, .matera img) {
-  height: 400px;
-  width: 700px;
-  border: 2px solid #000;
-  box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
-  -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7); }
-
 header {
   background-color: #432818;
   position: sticky;
@@ -157,11 +123,15 @@ header {
   height: 90vh;
   background-color: #d4a276; }
   .servicios div {
-    width: 70%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     padding: 10px; }
     .servicios div h3 {
       font-size: 50px;
       font-weight: 700;
+      width: 80%;
       text-align: center;
       background-color: #603808;
       color: #fff;
@@ -169,6 +139,7 @@ header {
       margin: 0; }
     .servicios div p {
       padding: 20px;
+      width: 80%;
       font-size: 25px;
       font-weight: 500;
       text-align: center;
@@ -188,12 +159,16 @@ header {
   justify-content: space-around;
   align-items: center; }
   .servicios-preparacion div {
-    width: 70%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     padding: 10px; }
     .servicios-preparacion div h3 {
       font-size: 50px;
       font-weight: 700;
       text-align: center;
+      width: 80%;
       background-color: #603808;
       color: #fff;
       border: 3px solid black;
@@ -202,6 +177,7 @@ header {
       padding: 20px;
       font-size: 25px;
       font-weight: 500;
+      width: 80%;
       text-align: center;
       color: #3f2300;
       margin: 0; }
@@ -215,7 +191,10 @@ header {
   background-color: #d4a276;
   height: 90vh; }
   .servicios-yerba div {
-    width: 70%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     padding: 20px; }
     .servicios-yerba div h3 {
       font-size: 50px;
@@ -272,12 +251,58 @@ header {
       box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
       -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
       -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7); }
+    .productos .productos-contenedor div img {
+      width: 300px;
+      height: 300px; }
     .productos .productos-contenedor div h3 {
       font-size: 25px;
       border-top: 2px solid #000; }
     .productos .productos-contenedor div p {
       font-size: 15px;
       font-weight: 500; }
+
+:is(.comienzo, .matera) {
+  height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #d4a276;
+  border: 4px solid #000;
+  margin: 0; }
+
+:is(.comienzo div, .matera div) {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+:is(.comienzo div h2, .matera div h2) {
+  font-size: 50px;
+  font-weight: 700px;
+  width: 80%;
+  color: white;
+  text-align: center;
+  background-color: #603808;
+  border: 2px solid #000;
+  margin: 0; }
+
+:is(.comienzo div p, .matera div p) {
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 500px;
+  width: 80%;
+  color: #3f2300;
+  margin: 0; }
+
+:is(.comienzo div img, .matera div img) {
+  height: 400px;
+  width: 700px;
+  border: 2px solid #000;
+  box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7); }
 
 .matera {
   flex-direction: row-reverse; }
@@ -344,6 +369,15 @@ footer {
     font-size: 40px;
     color: #EAC696; }
 
+@media screen and (max-width: 1600px) {
+  :is(.comienzo div h2, .matera div h2) {
+    font-size: 40px; }
+  :is(.comienzo div p, .matera div p) {
+    font-size: 27px; }
+  :is(.comienzo div img, .matera div img) {
+    height: 250px;
+    width: 550px; } }
+
 @media screen and (max-width: 1450px) {
   :is(.servicios div h3, .servicios-preparacion div h3, .servicios-yerba div h3) {
     font-size: 45px; }
@@ -394,7 +428,14 @@ footer {
     height: 208px; }
     .muestra-productos div a img {
       width: 250px;
-      height: 200px; } }
+      height: 200px; }
+  :is(.comienzo div h2, .matera div h2) {
+    font-size: 30px; }
+  :is(.comienzo div p, .matera div p) {
+    font-size: 23px; }
+  :is(.comienzo div img, .matera div img) {
+    height: 200px;
+    width: 450px; } }
 
 @media screen and (max-width: 1120px) {
   .productos .productos-contenedor div {
@@ -417,6 +458,10 @@ footer {
     font-weight: 300px; }
   .caja-cuestionario form {
     width: 700px; } }
+
+@media screen and (max-width: 1000px) {
+  :is(.comienzo, .matera) {
+    flex-direction: column; } }
 
 @media screen and (max-width: 900px) {
   header {
@@ -484,6 +529,13 @@ footer {
   .caja-cuestionario form {
     width: 330px; } }
 
+@media screen and (max-width: 488px) {
+  :is(.comienzo div p, .matera div p) {
+    font-size: 20px; }
+  :is(.comienzo div img, .matera div img) {
+    height: 200px;
+    width: 340px; } }
+
 @media screen and (max-width: 444px) {
   .servicios div h3 {
     font-size: 25px; }
@@ -512,4 +564,7 @@ footer {
   .hero h2 {
     font-size: 30px; }
   .hero p {
-    font-size: 17px; } }
+    font-size: 17px; }
+  :is(.comienzo div img, .matera div img) {
+    height: 150px;
+    width: 240px; } }
