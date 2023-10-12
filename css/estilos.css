@@ -66,7 +66,7 @@ header {
 
 .muestra-productos {
   background-color: #a47148;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -83,7 +83,8 @@ header {
       height: 300px;
       box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
       -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
-      -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7); }
+      -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+      object-fit: cover; }
     .muestra-productos div:hover {
       transform: scale(1.05);
       box-shadow: -1px 1px 27px 3px black;
@@ -302,7 +303,8 @@ header {
   border: 2px solid #000;
   box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7); }
+  -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+  object-fit: cover; }
 
 .matera {
   flex-direction: row-reverse; }

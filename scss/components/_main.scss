@@ -1,12 +1,13 @@
 //! -------- INDEX --------
-.hero{
+.hero {
     width: 100%;
     height: 90vh;
     background-color: nth($colores-fondo, 1);
     flex-direction: column;
     @extend %flex-center;
-    h2{
-        background-color: nth($colores-fondo, 4 );
+
+    h2 {
+        background-color: nth($colores-fondo, 4);
         color: white;
         font-size: 55px;
         font-weight: 700;
@@ -14,7 +15,8 @@
         padding: 10px;
         text-align: center;
     }
-    p{
+
+    p {
         font-size: 30px;
         padding: 20px;
         text-align: center;
@@ -22,93 +24,102 @@
     }
 }
 
-.muestra-productos{
+.muestra-productos {
     background-color: nth($colores-fondo, 2);
-    height: 100vh;
+    height: 70vh;
     @include flex(flex, row, space-around, center);
     flex-wrap: wrap;
-    div{
+
+    div {
         width: 358px;
         height: 308px;
         border: 4px solid black;
         margin: 10px;
         transition: 1s;
-        a{
-            img{
+
+        a {
+            img {
                 width: 350px;
                 height: 300px;
-                box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-                -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-                -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+                box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+                -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+                -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+                object-fit: cover;
             }
         }
-        &:hover{
+
+        &:hover {
             transform: scale(1.05);
-            box-shadow: -1px 1px 27px 3px rgba(0,0,0,1);
-            -webkit-box-shadow: -1px 1px 27px 3px rgba(0,0,0,1);
-            -moz-box-shadow: -1px 1px 27px 3px rgba(0,0,0,1);
+            box-shadow: -1px 1px 27px 3px rgba(0, 0, 0, 1);
+            -webkit-box-shadow: -1px 1px 27px 3px rgba(0, 0, 0, 1);
+            -moz-box-shadow: -1px 1px 27px 3px rgba(0, 0, 0, 1);
         }
     }
 }
 
-.grid-galeria{
+.grid-galeria {
     width: 100%;
     margin-top: 5px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 400px;
     gap: 15px;
-    .item-galeria{
-        position: relative;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-            -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-            -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+
+    
+        .item-galeria {
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+                -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+                -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+            }
+            h3 {
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.527);
+                color: $color-texto;
+                width: 100%;
+                bottom: 0;
+                margin: 0;
+                padding: 10px;
+                text-align: center;
+            }
         }
-        h3{
-            position: absolute;
-            background-color: rgba(0, 0, 0, 0.527);
-            color: $color-texto;
-            width: 100%;
-            bottom: 0;
-            margin: 0;
-            padding: 10px;
-            text-align: center;
+        .img-1 {
+            grid-row: span 2;
         }
-    }
-    .img-1{
-        grid-row: span 2;
-    }
 }
 
 //! -------- FIN DEL INDEX --------
 
 //* -------- SERVICIOS --------
-.servicios{
+.servicios {
     border: 4px solid #000;
     height: 90vh;
     @extend %flex-center-around;
-    background-color: nth($colores-fondo, 1 );
-    div{
+    background-color: nth($colores-fondo, 1);
+
+    div {
         align-items: center;
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 10px;
-        h3{
+
+        h3 {
             font-size: 50px;
             font-weight: 700;
             width: 80%;
             text-align: center;
-            background-color: nth($colores-fondo, 4 );
+            background-color: nth($colores-fondo, 4);
             color: #fff;
             border: 3px solid black;
             margin: 0;
         }
-        p{
+
+        p {
             padding: 20px;
             width: 80%;
             font-size: 25px;
@@ -118,38 +129,42 @@
             margin: 0;
         }
     }
-    div{
-        iframe{
-            box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-            -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-            -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+
+    div {
+        iframe {
+            box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+            -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+            -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
         }
     }
-    
+
 }
 
-.servicios-preparacion{
+.servicios-preparacion {
     border: 2px solid #000;
-    background-color: nth($colores-fondo, 1 );
+    background-color: nth($colores-fondo, 1);
     height: 90vh;
     @include flex(flex, row-reverse, space-around, center);
-    div{
+
+    div {
         align-items: center;
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 10px;
-        h3{
+
+        h3 {
             font-size: 50px;
             font-weight: 700;
             text-align: center;
             width: 80%;
-            background-color: nth($colores-fondo, 4 );
+            background-color: nth($colores-fondo, 4);
             color: #fff;
             border: 3px solid black;
-            margin:0;
+            margin: 0;
         }
-        p{
+
+        p {
             padding: 20px;
             font-size: 25px;
             font-weight: 500;
@@ -159,37 +174,41 @@
             margin: 0;
         }
     }
-    div{
-        iframe{
-            box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-            -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-            -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+
+    div {
+        iframe {
+            box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+            -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+            -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
         }
     }
-    
+
 }
 
-.servicios-yerba{
+.servicios-yerba {
     border: 4px solid #000;
-    background-color: nth($colores-fondo, 1 );
+    background-color: nth($colores-fondo, 1);
     height: 90vh;
     @extend %flex-center;
-    div{
+
+    div {
         align-items: center;
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 20px;
-        h3{
+
+        h3 {
             font-size: 50px;
             font-weight: 700;
             text-align: center;
-            background-color: nth($colores-fondo, 4 );
+            background-color: nth($colores-fondo, 4);
             color: #fff;
             border: 3px solid black;
-            margin:0;
+            margin: 0;
         }
-        p{
+
+        p {
             padding: 20px;
             font-size: 25px;
             font-weight: 500;
@@ -198,8 +217,9 @@
             margin: 0;
         }
     }
-    div{
-        ol{
+
+    div {
+        ol {
             padding: 20px;
             font-size: 25px;
             font-weight: 500;
@@ -212,25 +232,27 @@
 //* -------- FIN DE SERVICIOS --------
 
 //? -------- PRODUCTOS --------
-.productos{
-    h2{
+.productos {
+    h2 {
         border: 4px solid #000;
         text-align: center;
-        background-color: nth($colores-fondo, 4 );
+        background-color: nth($colores-fondo, 4);
         color: white;
         padding: 10px;
         font-size: 50px;
         font-weight: 700;
         margin: 0;
     }
-    .productos-contenedor{
+
+    .productos-contenedor {
         width: 100%;
         height: 100%;
         padding: 20px;
         @include flex(flex, row, space-evenly, center);
         flex-wrap: wrap;
-        background-color: nth($colores-fondo, 1 );
-        div{
+        background-color: nth($colores-fondo, 1);
+
+        div {
             width: 325px;
             height: 425px;
             border: 4px solid black;
@@ -238,22 +260,26 @@
             margin: 5px;
             background-color: #fff;
             transition: 1s;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.05);
-                box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-                -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-                -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
+                box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+                -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+                -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
 
             }
-            img{
+
+            img {
                 width: 300px;
                 height: 300px;
             }
-            h3{
+
+            h3 {
                 font-size: 25px;
                 border-top: 2px solid #000;
             }
-            p{
+
+            p {
                 font-size: 15px;
                 font-weight: 500;
             }
@@ -265,17 +291,17 @@
 
 //TODO -------- NOSOTROS --------
 
-:is(.comienzo,.matera){
+:is(.comienzo, .matera) {
     height: 90vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: nth($colores-fondo, 1 );
+    background-color: nth($colores-fondo, 1);
     border: 4px solid #000;
     margin: 0;
 }
 
-:is(.comienzo div,.matera div){
+:is(.comienzo div, .matera div) {
     width: 100%;
     padding: 10px;
     margin: 0;
@@ -284,18 +310,18 @@
     flex-direction: column;
 }
 
-:is(.comienzo div h2, .matera div h2,){
+:is(.comienzo div h2, .matera div h2, ) {
     font-size: 50px;
     font-weight: 700px;
     width: 80%;
     color: white;
     text-align: center;
-    background-color: nth($colores-fondo, 4 );
+    background-color: nth($colores-fondo, 4);
     border: 2px solid #000;
     margin: 0;
 }
 
-:is(.comienzo div p,.matera div p){
+:is(.comienzo div p, .matera div p) {
     padding: 20px;
     font-size: 30px;
     font-weight: 500px;
@@ -304,74 +330,83 @@
     margin: 0;
 }
 
-:is(.comienzo div img,.matera div img){
+:is(.comienzo div img, .matera div img) {
     height: 400px;
     width: 700px;
     border: 2px solid #000;
-    box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-    -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-    -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7)
+    box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+    object-fit: cover;
 }
 
-.matera{
+.matera {
     flex-direction: row-reverse;
 }
 
 //TODO -------- FIN DE NOSOTROS --------
 
 // -------- CONTACTANOS --------
-.opinion{
+.opinion {
     text-align: center;
-    background-color: nth($colores-fondo, 4 );
+    background-color: nth($colores-fondo, 4);
     border: 4px solid black;
     color: white;
     padding: 10px;
-    h2{
+
+    h2 {
         font-size: 40px;
         font-weight: 700;
     }
-    p{
+
+    p {
         font-size: 20px;
         font-weight: 400;
     }
 }
 
-.caja-cuestionario{
+.caja-cuestionario {
     height: 80vh;
     @extend %flex-center;
-    background-color: nth($colores-fondo, 1 );
-    form{
+    background-color: nth($colores-fondo, 1);
+
+    form {
         border: 3px solid black;
         padding: 20px;
-        background-image: linear-gradient(#bb95578e, #bb955794) , url(../img/fondo_yerba.png);
-        box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-        -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-        -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.7);
-        input{
+        background-image: linear-gradient(#bb95578e, #bb955794), url(../img/fondo_yerba.png);
+        box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+        -webkit-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+        -moz-box-shadow: -1px 1px 23px 3px rgba(0, 0, 0, 0.7);
+
+        input {
             width: 100%;
             font-size: 25px;
             font-weight: bold;
             background-color: transparent;
             border: none;
             border-bottom: 2px solid #000;
-            &::placeholder{
+
+            &::placeholder {
                 color: #000000;
             }
-            &#enviar{
-                background-color:#faedcd;
+
+            &#enviar {
+                background-color: #faedcd;
                 font-size: 25px;
                 border: 2px solid #000;
                 padding: 10px;
             }
         }
-        textarea{
+
+        textarea {
             width: 100%;
             font-size: 25px;
             font-weight: bold;
             background-color: transparent;
             border: none;
             border-bottom: 2px solid #000;
-            &::placeholder{
+
+            &::placeholder {
                 color: #000000;
             }
         }
