@@ -518,7 +518,13 @@ footer {
   .hero h2 {
     font-size: 35px; }
   .hero p {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .muestra-productos div {
+    width: 208px;
+    height: 158px; }
+    .muestra-productos div a img {
+      width: 200px;
+      height: 150px; } }
 
 @media screen and (max-width: 550px) {
   .grid-galeria {
