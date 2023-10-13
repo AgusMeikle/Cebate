@@ -404,18 +404,18 @@ footer {
     flex-direction: column;
     justify-content: space-evenly; }
     .servicios div h3 {
-      font-size: 40px; }
+      font-size: 30px; }
     .servicios div p {
       font-size: 20px; }
   .servicios-preparacion {
     flex-direction: column;
     justify-content: space-evenly; }
     .servicios-preparacion div h3 {
-      font-size: 40px; }
+      font-size: 30px; }
     .servicios-preparacion div p {
       font-size: 20px; }
   .servicios-yerba div h3 {
-    font-size: 40px; }
+    font-size: 30px; }
   .servicios-yerba div p {
     font-size: 20px; }
   .servicios-yerba div ol li {
